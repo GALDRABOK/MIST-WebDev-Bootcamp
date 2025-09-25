@@ -1,0 +1,10 @@
+body{
+    background:linear-gradient(to ,red,black);
+    
+}
+#name{
+    color: #00000;
+    text-shadow:0 0 10px ,0  5.5px white;
+    font-size: 60px;
+    font-weight: bold
+}
