@@ -1,20 +1,11 @@
-
-.section {
-  padding: 50px 20px;
-}
-
-.hover-scale {
-  transition: transform 0.3s;
-}
-.hover-scale:hover {
-  transform: scale(1.05);
-}
-
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 70px;
 }
 
+.nav-link {
+  transition: transform 0.2s;
+}
 .nav-link:hover {
   transform: scale(1.05);
-  transition: transform 0.2s;
 }
