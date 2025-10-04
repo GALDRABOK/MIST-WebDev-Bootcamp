@@ -1,127 +1,20 @@
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
+.section {
+  padding: 50px 20px;
 }
 
-.header-container {
-    display: flex; /*HOrizontal alingment of list elements*/
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #222;
+.hover-scale {
+  transition: transform 0.3s;
+}
+.hover-scale:hover {
+  transform: scale(1.05);
 }
 
-.header-container h1 {
-    margin: 0;
-    font-size: 36px;
-    color: #ee6c4d;
+html {
+  scroll-behavior: smooth;
 }
 
-.header-container nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+.nav-link:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
 }
-
-.header-container nav ul li {
-    margin-left: 20px;
-}
-
-.header-container nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.header-container nav ul li a:hover {
-    color: #00eaff;
-}
-
-#top {
-    background-image: url('top_bgimage.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    text-align: center;
-}
-
-#top div {
-    background-color: rgba(0, 0, 0, 0.5); 
-    padding: 20px;
-    color: #fff;
-}
-
-div {
-    padding: 50px 20px;
-}
-
-div h1, div h2 {
-    margin-bottom: 20px;
-}
-
-#services {
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
-}
-
-#services ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-around; 
-    flex-wrap: wrap; 
-}
-
-#services ul li {
-    display: flex;          /* horizontal alignment */
-    align-items: center;    /* vertical alignment */
-    text-align: left;       
-    margin: 30px;
-    transition: transform 0.3s; 
-}
-
-#services ul li img {
-    width: 200px;         
-    max-width: 100%;
-    height: auto;
-    margin-right: 20px;   
-    border-radius: 8px;
-}
-
-#services ul li span {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-#services ul li:hover {
-    transform: scale(1.05); /* hover zoom */
-}
-
-
-#about {
-    background-color: #e0e0e0; 
-    border-bottom: 1px solid #ccc;
-}
-
-
-#contact {
-    background-color: #000;
-    color: #fff;
-}
-
-footer {
-    background-color: #222;
-    text-align: center;
-    padding: 20px;
-    color: #888;
-}
-

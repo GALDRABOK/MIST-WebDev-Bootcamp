@@ -1,65 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>CustomKeys</title>
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>CustomKeys</title>
+  <link rel="stylesheet" href="main.css">
 </head>
-<body>
-    <header>
-        <div class="header-container">
-            <h1>CustomKeys</h1>
-            <nav>
-                <ul>
-                    <li><a href="#keyboards">Keyboards</a></li>
-                    <li><a href="#accessories">Accessories</a></li>
-                    <li><a href="#diy">DIY Kits</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<body class="m-0 p-0 bg-gray-100 text-gray-800 font-sans">
+ <header class="fixed w-full top-0 left-0 bg-gray-800 shadow-md z-50">
+  <div class="flex justify-between items-center p-5 max-w-7xl mx-auto">
+    <h1 class="text-4xl text-[#ee6c4d] font-bold">CustomKeys</h1>
+    <nav>
+      <ul class="flex space-x-4">
+        <li>
+          <a href="#top" class="px-4 py-2 rounded bg-sky-300 text-gray-800 font-bold hover:bg-sky-400 transition nav-link">Home</a>
+        </li>
+        <li>
+          <a href="#keyboards" class="px-4 py-2 rounded bg-sky-300 text-gray-800 font-bold hover:bg-sky-400 transition nav-link">Keyboards</a>
+        </li>
+        <li>
+          <a href="#accessories" class="px-4 py-2 rounded bg-sky-300 text-gray-800 font-bold hover:bg-sky-400 transition nav-link">Accessories</a>
+        </li>
+        <li>
+          <a href="#contact" class="px-4 py-2 rounded bg-sky-300 text-gray-800 font-bold hover:bg-sky-400 transition nav-link">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+ </header>
 
-    <div id="top">
-        <div>
-            <h1>Welcome to CustomKeys</h1>
-            <p>Your one-stop solution for all your keyboard needs.</p>
-        </div>
+  <div id="top" class="bg-[url('top_bgimage.jpg')] bg-cover bg-center h-[400px] flex items-center justify-center text-center">
+    <div class="bg-black/50 p-5 text-white">
+      <h1 class="mb-5 text-3xl">Welcome to CustomKeys</h1>
+      <p>Your one-stop solution for all your keyboard needs.</p>
     </div>
+  </div>
 
-    <div id="services">
-        <h2>Our Offering</h2>
-        <p>We provide a range of prebuilt and custom keyboards:</p>
-        <ul>
-            <li>
-                <img src="prebuilt.jpg" alt="Pre-built keyboard">
-                <span>Pre-Built Keyboards</span>
-            </li>
-            <li>
-                <img src="custom.jpg" alt="Custom keyboard">
-                <span>Custom Keyboards</span>
-            </li>
-            <li>
-                <img src="DIY.jpg" alt="DIY kit">
-                <span>DIY Kits</span>
-            </li>
-        </ul>
-    </div>
+  <div id="keyboards" class="bg-white border-b border-gray-300 section">
+  <h2 class="mb-5 text-2xl font-bold border-b-4 border-gray-800 pb-2 inline-block">
+    Keyboards
+  </h2>
+  <p class="mb-5">We provide prebuilt and custom keyboards:</p>
 
-    <div id="about">
-        <h2>About Us</h2>
-        <p>We are a dedicated team with over 5 years of experience in building and designing keyboards. Our mission is to provide high-quality keyboards for the best typing experience.</p>
-    </div>
+  <ul class="list-none p-0 flex justify-around flex-wrap">
+    <li class="flex items-center text-left m-8 hover-scale">
+      <img src="prebuilt.jpg" alt="Pre-built keyboard" class="w-[200px] max-w-full h-auto mr-5 rounded-lg">
+      <span class="text-lg font-bold">Pre-Built Keyboards</span>
+    </li>
+    <li class="flex items-center text-left m-8 hover-scale">
+      <img src="custom.jpg" alt="Custom keyboard" class="w-[200px] max-w-full h-auto mr-5 rounded-lg">
+      <span class="text-lg font-bold">Custom Keyboards</span>
+    </li>
+    <li class="flex items-center text-left m-8 hover-scale">
+      <img src="DIY.jpg" alt="DIY kit" class="w-[200px] max-w-full h-auto mr-5 rounded-lg">
+      <span class="text-lg font-bold">DIY Kits</span>
+    </li>
+  </ul>
+</div>
+ <div id="accessories" class="bg-gray-100 border-b border-gray-300 section">
+  <h2 class="mb-5 text-2xl font-bold border-b-4 border-gray-800 pb-2 inline-block">
+    Accessories
+  </h2>
+  <p class="mb-5">Find keycaps, switches, cables, and more to complete your keyboard setup:</p>
+  <ul class="list-none p-0 flex justify-around flex-wrap">
+    <li class="flex flex-col items-center text-center m-8 hover-scale">
+      <img src="keycaps.jpg" alt="Keycaps" class="w-[150px] h-auto mb-2 rounded-lg">
+      <span class="text-lg font-bold">Keycaps</span>
+    </li>
+    <li class="flex flex-col items-center text-center m-8 hover-scale">
+      <img src="switches.jpg" alt="Switches" class="w-[150px] h-auto mb-2 rounded-lg">
+      <span class="text-lg font-bold">Switches</span>
+    </li>
+    <li class="flex flex-col items-center text-center m-8 hover-scale">
+      <img src="cables.jpg" alt="Cables" class="w-[150px] h-auto mb-2 rounded-lg">
+      <span class="text-lg font-bold">Cables</span>
+    </li>
+  </ul>
+ </div>
 
 
-    <div id="contact">
-        <h2>Contact Us</h2>
-        <p>Phone: (910) 232-524-5235</p>
-        <p>Email: contact@customkeys.com</p>
-    </div>
+      </li>
+    </ul>
+  </div>
 
+  <div id="about" class="bg-gray-200 border-b border-gray-300 section">
+    <h2 class="mb-5 text-2xl">About Us</h2>
+    <p>We are a dedicated team with over 5 years of experience in building and designing keyboards. Our mission is to provide high-quality keyboards for the best typing experience.</p>
+  </div>
 
-    <footer>
-        <p>© 2025 CustomKeys. All rights reserved.</p>
-    </footer>
+  <div id="contact" class="bg-black text-white section">
+    <h2 class="mb-5 text-2xl">Contact Us</h2>
+    <p>Phone: (910) 232-524-5235</p>
+    <p>Email: contact@customkeys.com</p>
+  </div>
+
+  <footer class="bg-gray-900 text-center p-5 text-gray-500">
+    <p>© 2025 CustomKeys. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
